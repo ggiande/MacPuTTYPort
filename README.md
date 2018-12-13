@@ -1,2 +1,2 @@
 # putty-example
-# putty-example
+WIP on creating a script 
