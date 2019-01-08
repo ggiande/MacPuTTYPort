@@ -3,7 +3,7 @@
 "description" : "macOS Mojave installation of a PuTTY port.",
 "homepage" : "https://github.com/ggiande/putty-example","
 "keywords" : ["macOS","putty","installation","xCode","appstore","xQuartz"],
-"author" : "Giancarlo Garcia Deleon <>",
+"author" : "ggiande",
 "repository" : {"type" : "git", "url": "https://github.com/ggiande/putty-example.git"},
 "main" : "MacanExampleofPuTTY.js",
 "version" : "0.0.1",
