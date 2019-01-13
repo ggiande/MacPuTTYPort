@@ -19,9 +19,9 @@ fi
 echo "Line"
 echo "Line"
 echo "Line"
+echo "Check for Install."
 while [ ! -d /Applications/Utilities/XQuartz.app ];
 do
-    echo "Installing."
     sleep 1;
 done
     echo "Already Installed"
