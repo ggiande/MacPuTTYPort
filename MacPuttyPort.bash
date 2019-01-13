@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#Checks to see if Xcode is installed. If so, then a software update checker for Xcode will be launched. After the
+#Checks to see if Xcode is installed. If so, then a software update checker for Xcode will be launched. Then after, command line tools will be added to the mac.
 while open -Ra "Xcode" == true; then
 	echo "VERIFIED: 'Xcode' is installed on this machine."
     softwareupdate --install xcode
@@ -10,34 +10,9 @@ else
     echo "Please manually install Xcode to continue with the installation of the MacPuttyPort."
     echo "From here on out, "
 fi
+#If Xcode was not previously installed on the mac then a link to Apple's Developer Tools will be opened. From here, we would like to ask the user to please install command line tools while they are on the site.
 
-echo "Please enter your password to allow xcode to have the license to build the command lines within the terminal."
+#echo "Please enter your password to allow xcode to have the license to build the command lines within the terminal."
 sudo xcodebuild -license
 
-# Bash Menu for Installation of MacPorts.
-Codename="Please enter your choice: "
-
-options=("macOS Mojave" "macOS High Sierra" "macOS Sierra" "OS X El Capitan")
-select opt in "${options[@]}"
-do
-    case $opt in
-        "macOS Mojave")
-            echo "You selected macOS Mojave."
-            break
-            ;;
-        "macOS High Sierra")
-            echo "You selected macOS High Sierra."
-            break
-            ;;
-        "macOS Sierra")
-            echo "You selected macOS Sierra."
-            break
-            ;;
-        "OS X El Capitan")
-            echo "You selected OS X El Capitan."
-            break
-            ;;
-        *) echo "invalid option $REPLY";;
-    esac
-done
-
+#Xcode will ask the user to accept their license.
