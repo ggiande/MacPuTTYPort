@@ -1,4 +1,4 @@
-# MacPuttyPort
+# MacPuTTYPort
 To successfully install PuTTY, xCode, MacPorts, and xQuartz must be installed on the machine. 
 
 The first segment of the shell will prompt the user to install xCode if not detected on the machine. When xCode is on the machine, xCode Command Line Tools will be installed. In addition, xCode will ask the user for their credentials to accep their license agreement of usage. 
