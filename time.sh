@@ -11,6 +11,8 @@ else
     echo "xQuartz will now be installed in Desktop for convenience."
     cd ~/Desktop/
     sudo hdiutil attach XQuartz-2.7.11.dmg
+    echo ""
+    echo ""
     echo "Attachhing and Installing. This may take a while!"
     sudo installer -pkg /Volumes/XQuartz-2.7.11/XQuartz.pkg  -target /
     sudo hdiutil detach XQuartz-2.7.11.dmg
@@ -19,3 +21,13 @@ else
 fi
 echo ""
 echo ""
+
+echo "Removing preinstalls."
+cd ~/Desktop/
+sudo rm XQuartz-2.7.11.dmg
+sudo hdiutil detach /Volumes/XQuartz-2.7.11/
+
+echo "A shortcut will now be created on the desktop for easy access."
+cd ~/Desktop/
+sudo cp /opt/local/bin/putty ~/Desktop/
+sudo putty
