@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+echo
+echo "BEGINNING OF TRANSMISSION"
+echo "This is an experimental installer script for MacOS to install PuTTY."
+echo
 #This is referred to as Segment One.
 if open -Ra "Xcode"; then
 	echo "VERIFIED: 'Xcode' is installed on this machine."
@@ -143,3 +147,8 @@ echo "A shortcut will now be created on the desktop for easy access."
 cd ~/Desktop/
 sudo cp /opt/local/bin/putty ~/Desktop/
 sudo putty
+echo "Hello! If you have gotten to the end with everything going smoothly then Congratulations!"
+echo
+echo "END OF TRANSMISSION"
+echo
+echo
