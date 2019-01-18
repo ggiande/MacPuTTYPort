@@ -22,7 +22,6 @@ fi
 #If Xcode was not previously installed on the mac then a link to Apple's Developer Tools will be opened. From here, we would like to ask the user to please install command line tools while they are on the site.
 
 #This is refrred to as Segment Two.
-#!/bin/sh
 #  Codename.sh
 #  Created by Gian Garcia on 1/11/19.
 # Bash Menu for Installation of MacPorts.
@@ -114,7 +113,6 @@ select opt in "${options[@]}"
 done
 
 #This is referred to as Segement Three.
-#!/bin/bash
 #Automatic download of xQuartz, a graphical software that will display putty for us.
 echo ""
 echo ""
@@ -148,7 +146,7 @@ cd ~/Desktop/
 sudo cp /opt/local/bin/putty ~/Desktop/
 sudo putty
 echo "Hello! If you have gotten to the end with everything going smoothly then Congratulations!"
-echo
+echo ""
 echo "END OF TRANSMISSION"
-echo
-echo
+echo ""
+echo ""
