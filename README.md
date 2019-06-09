@@ -11,11 +11,11 @@ Note: If you were referred by the shell to this file, note that xCode will not b
 The first segment of the shell will prompt the user to install xCode if not detected on the machine. When xCode is on the machine, xCode Command Line Tools will be installed. In addition, xCode will ask the user for their credentials to accep their license agreement of usage. 
 ![MacPortImage](https://github.com/ggiande/putty-example/blob/assets/macports.png?raw=true)
 The second segement of the shell consists of the automatic installation of MacPorts. The shell will display a prompt asking the user to select which operating system (codename) they currently have installed on their machine. 
-![CodeName](https://github.com/ggiande/MacPuTTYPort/blob/master/pics/CodenameEg.png)
+![CodenameEg](https://github.com/ggiande/MacPuTTYPort/blob/master/pics/CodenameEg.png)
 
 The third segement of the shell will automatically install xQuartz. xQuartz is an open-source effort to develop a version of the X.Org X Window System that runs on OS X, and will also prompt the user for their password to install xQuartz. After the installation of xQuartz is completed, the shell create a local desktop shortcut that will open PuTTY
 ![EndofTransmission](https://github.com/ggiande/MacPuTTYPort/blob/master/pics/EndofTransmission.png)
-![PuTTY](https://github.com/ggiande/MacPuTTYPort/blob/master/pics/SCputty.png)
+![SCputty](https://github.com/ggiande/MacPuTTYPort/blob/master/pics/SCputty.png)
 
 ## Built With
 * [Macports](https://www.macports.org/install.php) - Package Management System to install PuTTY
